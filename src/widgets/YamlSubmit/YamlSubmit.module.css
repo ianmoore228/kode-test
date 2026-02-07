@@ -1,0 +1,22 @@
+.yamlSubmit {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.yamlSubmitTitle {
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+.yamlSubmitContainerLeft {
+    width: 45%;
+}
+
+.yamlSubmitContainerRight { 
+    width: 45%;
+}
+
+.line {
+    border: 1px dotted var(--black);
+}

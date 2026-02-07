@@ -1,0 +1,17 @@
+.fileUploaderInput {
+    display: none;
+}
+
+.fileUploaderLabel {
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14px;
+    border-radius: 0;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
