@@ -17,4 +17,27 @@ body {
     font-weight: 300;
     font-style: normal;
     background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+   
+}
+
+button {
+    border: 1px solid var(--black);
+    background-color: var(--white);
+    padding: 8px 14px;
+    font-family: "Jost", sans-serif;
+}
+
+input {
+    background-color: var(--white);
+    font-family: "Jost", sans-serif;
+}
+
+textarea {
+    resize: none;
+    border: 1px solid var(--black);
+    background-color: var(--white);
+    font-family: "Jost", sans-serif;
 }
