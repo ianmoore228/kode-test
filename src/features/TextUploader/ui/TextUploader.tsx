@@ -15,11 +15,15 @@ export const TextUploader: FC = () => {
           const parsed = parseYaml(yamlText.value);
     
           const { components, paths, ...other } = parsed;
+
+          const selectedFile = "openapi.yaml";
     
           dispatch(
             setOpenApiData({
               components,
+              name: "openapi.yaml",
               paths,
+              selectedFile,
               other
             })
           );
@@ -36,7 +40,7 @@ export const TextUploader: FC = () => {
         <textarea id="yamlText" className={styles.textUploaderInput} placeholder="Вставтьте текст спецификации openapi.yaml"></textarea>
         <button
         onClick={handleSubmit}
-        className={styles.textUploaderButton} type="submit">Парсинг</button>
+        className={styles.textUploaderButton} type="button">Парсинг</button>
         </div>
     )
 }

@@ -34,7 +34,9 @@ function handleFileUpload(e: React.ChangeEvent<HTMLInputElement>) {
       dispatch(
         setOpenApiData({
           components,
+          name: file.name,
           paths,
+          selectedFile: file.name,
           other
         })
       );
