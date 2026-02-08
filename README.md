@@ -18,4 +18,4 @@ npm run dev
 ```
 
 Или проверьте тут: 
-(ссылка будет позже)
+https://ianmoore228.github.io/kode-test/
