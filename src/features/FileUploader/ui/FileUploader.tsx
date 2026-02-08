@@ -16,7 +16,7 @@ function handleFileUpload(e: React.ChangeEvent<HTMLInputElement>) {
   const fileExtension = file.name.split(".")[1];
 
   if (fileExtension !== "yaml") {
-   console.log("error")
+   alert("Выберите yaml-файл")
    return
   }
 
