@@ -1,0 +1,18 @@
+.yamlStructure {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.line {
+    border: 1px dotted var(--black);
+    width: 1px;
+}
+
+.fileText {
+    width: 45%;
+}
+
+.fileStructure {
+    width: 45%;
+}
