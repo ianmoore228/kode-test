@@ -1,0 +1,12 @@
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 16px;
+  padding: 0;
+}
+
+.item {
+  font-size: 16px;
+}
