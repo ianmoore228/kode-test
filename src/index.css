@@ -28,6 +28,9 @@ button {
     background-color: var(--white);
     padding: 8px 14px;
     font-family: "Jost", sans-serif;
+    display: flex;
+    /* width: fit-content; */
+    cursor: pointer;
 }
 
 input {
@@ -40,4 +43,8 @@ textarea {
     border: 1px solid var(--black);
     background-color: var(--white);
     font-family: "Jost", sans-serif;
+}
+
+ul {
+    list-style: none;
 }
