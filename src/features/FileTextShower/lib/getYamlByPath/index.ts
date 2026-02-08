@@ -1,0 +1,1 @@
+export { getYamlByPath } from "./getYamlByPath";
