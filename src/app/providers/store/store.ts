@@ -3,7 +3,7 @@ import { openApiReducer } from "@/entities/openApi";
 
 export const store = configureStore({
   reducer: {
-    yaml: openApiReducer,
+    openApi: openApiReducer,
   },
 });
 
