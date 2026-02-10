@@ -3,6 +3,7 @@ import { type FC } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { selectOpenApi, selectFile } from "@/entities/openApi";
 import { FileList } from "@/shared/ui/FileList";
+import { type ObjectProps } from "@/entities/openApi";
 
 export const FileStructureShower: FC = () => {
   const dispatch = useDispatch();
@@ -12,7 +13,7 @@ export const FileStructureShower: FC = () => {
 
   return (
     <div className={styles.fileShower}>
-      {(components && paths) && (
+      {components && paths && (
         <>
           <button
             className={styles.button}
@@ -22,10 +23,18 @@ export const FileStructureShower: FC = () => {
           </button>
 
           <p className={styles.title}>components:</p>
-          <FileList path="components" data={components} depth={1} />
+          <FileList
+            path="components"
+            data={components as Record<string, ObjectProps>}
+            depth={1}
+          />
 
           <p className={styles.title}>paths:</p>
-          <FileList path="paths" data={paths} depth={1} />
+          <FileList
+            path="paths"
+            data={paths as Record<string, ObjectProps>}
+            depth={1}
+          />
         </>
       )}
     </div>
